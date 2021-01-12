@@ -1,0 +1,81 @@
+<div cdkDropListGroup class="table">
+  <div class="example-container">
+    <h2>To Do</h2>
+    <div
+      cdkDropList
+      [cdkDropListData]="todo"
+      class="example-list"
+      (cdkDropListDropped)="drop($event)">
+      <div
+        class="example-box"
+        *ngFor="let item of todo | searchTask:searchStr"
+        cdkDrag
+      >
+        <app-list
+          [item]="item"
+          (removeTask)="deleteItem($event)"
+        ></app-list>
+      </div>
+    </div>
+  </div>
+
+  <div class="example-container">
+    <h2>In Progress</h2>
+    <div
+      cdkDropList
+      [cdkDropListData]="inProgress"
+      class="example-list"
+      (cdkDropListDropped)="drop($event)">
+      <div
+        class="example-box"
+        *ngFor="let item of inProgress | searchTask:searchStr"
+        cdkDrag
+      >
+      <app-list
+        [item]="item"
+        (removeTask)="deleteItem($event)"
+      ></app-list>
+      </div>
+    </div>
+  </div>
+
+  <div class="example-container">
+    <h2>In Review</h2>
+    <div
+      cdkDropList
+      [cdkDropListData]="inReview"
+      class="example-list"
+      (cdkDropListDropped)="drop($event)">
+      <div
+        class="example-box"
+        *ngFor="let item of inReview | searchTask:searchStr"
+        cdkDrag
+      >
+        <app-list
+          [item]="item"
+          (removeTask)="deleteItem($event)"
+        ></app-list>
+      </div>
+    </div>
+  </div>
+
+  <div class="example-container">
+    <h2>Done</h2>
+    <div
+      cdkDropList
+      [cdkDropListData]="done"
+      class="example-list"
+      (cdkDropListDropped)="drop($event)">
+      <div
+        class="example-box"
+        *ngFor="let item of done | searchTask:searchStr"
+        cdkDrag
+      >
+        <app-list
+          [item]="item"
+          (removeTask)="deleteItem($event)"
+        ></app-list>
+      </div>
+    </div>
+  </div>
+</div>

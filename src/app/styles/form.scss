@@ -1,0 +1,57 @@
+.form-auth {
+  border: 2px solid #0100ca;
+  margin: 50px auto;
+  max-width: 300px;
+  padding: 20px;
+  text-align: center;
+
+  .btn-subbmit {
+    margin-top: 20px;
+  }
+}
+
+.mat-form-field-flex {
+  border-bottom: 2px solid #0100ca;
+}
+
+.mat-form-field-label {
+  color: #0100ca;
+}
+
+.mat-form-field-ripple {
+  background-color: #0100ca;
+}
+
+.email-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+.password-container {
+  margin-top: 10px;
+}
+
+.password-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+.password-right-align {
+  text-align: right;
+}
+
+input.password-right-align::-webkit-outer-spin-button,
+input.password-right-align::-webkit-inner-spin-button {
+  display: none;
+}
+
+input.password-right-align {
+  -moz-appearance: textfield;
+}
+
+.btn-hide {
+  width: 1px;
+  height: 1px;
+}
+
+.mat-flat-button.mat-button-disabled.mat-button-disabled {
+  background-color: #0100ca;
+}

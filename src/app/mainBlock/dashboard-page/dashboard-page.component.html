@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="header">
+    <mat-form-field class="search-form-field">
+      <mat-label>Search by title</mat-label>
+      <input
+        matInput
+        type="text"
+        [(ngModel)]="searchStr"
+      >
+      <button
+        mat-button
+        *ngIf="searchStr"
+        matSuffix
+        mat-icon-button
+        aria-label="Clear"
+        (click)="searchStr=''"
+      >
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <button
+      mat-flat-button
+      color="accent"
+      class="create-new-task"
+      (click)="openCreateModal()"
+    >
+      Create new task
+    </button>
+  </div>
+
+  <app-tasks [task]="task" [searchStr]="searchStr"></app-tasks>
+</div>

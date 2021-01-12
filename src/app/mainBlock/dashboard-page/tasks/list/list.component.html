@@ -1,0 +1,29 @@
+<ul>
+  <li><b>Title: </b>{{item.title}}</li>
+  <li><b>Assignee: </b>{{item.assignee}}</li>
+  <li><b>Priority: </b>{{item.priority}}</li>
+  <li><b>Type: </b>{{item.type}}</li>
+  <li><b>Due Date: </b>{{item.date}}</li>
+  <li class="display-none"><b>Status: </b>{{item.status}}</li>
+  <li class="display-none"><b>Id: </b>{{item.id}}</li>
+  <li *ngIf="item.description"><b>Description: </b>{{item.description}}</li>
+  <li class="btn-cont">
+    <button
+      class="btn-list"
+      mat-fab
+      color="accent"
+      [routerLink]="['/task', item.id, 'edit']"
+    >
+      <mat-icon>edit</mat-icon>
+    </button>
+
+    <button
+      class="btn-list"
+      mat-fab
+      color="warn"
+      (click)="deleteTask(item.id)"
+    >
+      <mat-icon>delete</mat-icon>
+    </button>
+  </li>
+</ul>

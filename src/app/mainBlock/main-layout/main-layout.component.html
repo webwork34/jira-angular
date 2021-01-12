@@ -1,0 +1,28 @@
+<nav>
+  <div class="wrapper main-block">
+
+    <h3>JIRA</h3>
+    <ul>
+      <li>
+        <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+      </li>
+    </ul>
+    <div class="box">
+      <h3>{{userName}}</h3>
+      <button
+        routerLink="/login"
+        type="button"
+        mat-flat-button
+        (click)="logout()"
+      >
+        Log out
+      </button>
+    </div>
+  </div>
+</nav>
+
+
+<section class="auth-block">
+  <router-outlet></router-outlet>
+</section>
+

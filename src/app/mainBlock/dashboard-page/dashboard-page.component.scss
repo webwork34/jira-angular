@@ -1,0 +1,18 @@
+.container {
+  padding: 20px 0;
+  max-width: 65%;
+  margin: 0 auto;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+
+    .create-new-task {
+      height: 40px;
+    }
+
+    .search-form-field {
+      width: calc(90% - 135px);
+    }
+  }
+}

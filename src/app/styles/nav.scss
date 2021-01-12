@@ -1,0 +1,26 @@
+nav {
+  background: #651fff;
+
+  .wrapper {
+    max-width: 300px;
+    margin: 0 auto;
+
+    ul {
+      display: flex;
+      justify-content: center;
+
+      a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        width: 101px;
+        text-align: center;
+
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
