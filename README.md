@@ -1,3 +1,8 @@
+# https://jira-angular.web.app/
+
+login: test@gmail.com
+password: 123456
+
 # Jira
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
